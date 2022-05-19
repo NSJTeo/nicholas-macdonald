@@ -1,20 +1,13 @@
 import { useRef } from 'react';
-import projects from './assets/projects.json';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Tools from './components/Tools';
-import Project from './components/Project';
+import Projects from './components/Projects';
 import {
   AppContainer as Container,
   LinkButton as Button,
   LinkButtons as Buttons,
-  ProjectsContainer,
 } from './styles';
-import { ProjectType } from './types';
-
-const projectsList = projects.map((project: ProjectType) => (
-  <Project key={project.id} />
-));
 
 function App() {
   const experienceRef = useRef<HTMLDivElement>(null);
@@ -44,7 +37,7 @@ function App() {
         </li>
       </Buttons>
       <Tools toolsRef={toolsRef} />
-      <ProjectsContainer ref={projectsRef}>{projectsList}</ProjectsContainer>
+      <Projects projectsRef={projectsRef} />
       <Experience experienceRef={experienceRef} />
     </Container>
   );
