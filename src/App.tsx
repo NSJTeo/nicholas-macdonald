@@ -4,7 +4,11 @@ import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Tools from './components/Tools';
 import Project from './components/Project';
-import { AppContainer } from './styles';
+import {
+  AppContainer as Container,
+  LinkButton as Button,
+  LinkButtons as Buttons,
+} from './styles';
 import { ProjectType } from './types';
 
 const projectsList = projects.map((project: ProjectType) => (
@@ -23,25 +27,25 @@ function App() {
   };
 
   return (
-    <AppContainer>
+    <Container>
       <AboutMe />
-      <ul>
+      <Buttons>
         <li>
-          <button onClick={() => scrollToElement(experienceRef)}>
+          <Button onClick={() => scrollToElement(toolsRef)}>Tools</Button>
+        </li>
+        <li>
+          <Button onClick={() => scrollToElement(projectsRef)}>Projects</Button>
+        </li>
+        <li>
+          <Button onClick={() => scrollToElement(experienceRef)}>
             Experience
-          </button>
+          </Button>
         </li>
-        <li>
-          <button onClick={() => scrollToElement(toolsRef)}>Tools</button>
-        </li>
-        <li>
-          <button onClick={() => scrollToElement(projectsRef)}>Projects</button>
-        </li>
-      </ul>
-      <Experience experienceRef={experienceRef} />
+      </Buttons>
       <Tools toolsRef={toolsRef} />
       <ul ref={projectsRef}>{projectsList}</ul>
-    </AppContainer>
+      <Experience experienceRef={experienceRef} />
+    </Container>
   );
 }
 
