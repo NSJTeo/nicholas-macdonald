@@ -1,18 +1,22 @@
 [
   {
     "id": 1,
+    "name": "CofeeShop",
     "url": "https://nsjteo.github.io/coffee-shop/"
   },
   {
     "id": 2,
+    "name": "TravelSite",
     "url": "https://nsjteo.github.io/travel-site/"
   },
   {
     "id": 3,
+    "name": "BandSite",
     "url": "https://nsjteo.github.io/band-site/"
   },
   {
     "id": 4,
+    "name": "PokeMart",
     "url": "https://nsjteo.github.io/pokeMart/"
   },
   {

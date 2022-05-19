@@ -1,16 +1,15 @@
 import { useRef } from 'react';
-import styled from 'styled-components';
 import projects from './assets/projects.json';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Tools from './components/Tools';
 import Project from './components/Project';
+import { AppContainer } from './styles';
+import { ProjectType } from './types';
 
-const projectsList = projects.map((_project, i) => <Project key={i} />);
-
-const Links = styled.ul`
-  height: 50rem;
-`;
+const projectsList = projects.map((project: ProjectType) => (
+  <Project key={project.id} />
+));
 
 function App() {
   const experienceRef = useRef<HTMLDivElement>(null);
@@ -24,9 +23,9 @@ function App() {
   };
 
   return (
-    <>
+    <AppContainer>
       <AboutMe />
-      <Links>
+      <ul>
         <li>
           <button onClick={() => scrollToElement(experienceRef)}>
             Experience
@@ -38,11 +37,11 @@ function App() {
         <li>
           <button onClick={() => scrollToElement(projectsRef)}>Projects</button>
         </li>
-      </Links>
+      </ul>
       <Experience experienceRef={experienceRef} />
       <Tools toolsRef={toolsRef} />
       <ul ref={projectsRef}>{projectsList}</ul>
-    </>
+    </AppContainer>
   );
 }
 
