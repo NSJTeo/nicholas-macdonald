@@ -4,4 +4,5 @@ export const ToolsContainer = styled.ul`
   padding: 1rem;
   margin-bottom: 1rem;
   background: #c5c9a4;
+  border-radius: 5px;
 `;

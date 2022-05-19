@@ -1,6 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { ProjectContainer as Container } from '../styles';
+import { ProjectType as Project } from '../types';
+
+type Props = {
+  project: Project;
+};
 
 interface ContainerProps {
   inView: boolean;
@@ -13,9 +18,11 @@ const InnerContainer = styled.div<ContainerProps>`
   ${({ inView }) => (inView ? 'transform: translateX(0%); opacity: 1;' : '')}
 `;
 
-export default function ProjectLeft() {
+export default function ProjectLeft({ project }: Props) {
   const [inView, setInView] = useState(false);
   const projectEl = useRef(null);
+
+  const { name, url } = project;
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -32,7 +39,10 @@ export default function ProjectLeft() {
 
   return (
     <Container ref={projectEl}>
-      <InnerContainer inView={inView}>Project</InnerContainer>
+      <InnerContainer inView={inView}>
+        <h3>{name}</h3>
+        <p>{url}</p>
+      </InnerContainer>
     </Container>
   );
 }

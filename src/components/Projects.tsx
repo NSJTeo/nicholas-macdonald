@@ -14,10 +14,10 @@ const projectsList = () => {
   return projects.map((project: Project) => {
     if (left) {
       left = false;
-      return <ProjectLeft key={project.id} />;
+      return <ProjectLeft key={project.id} project={project} />;
     }
     left = true;
-    return <ProjectRight key={project.id} />;
+    return <ProjectRight key={project.id} project={project} />;
   });
 };
 
