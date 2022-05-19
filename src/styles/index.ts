@@ -3,3 +3,7 @@ export { GlobalStyles } from './GlobalStyles';
 export { AboutMeContainer } from './AboutMeContainer';
 export { LinkButton } from './LinkButton';
 export { LinkButtons } from './LinkButtons';
+export { ToolsContainer } from './ToolsContainer';
+export { ProjectContainer } from './ProjectContainer';
+export { ProjectsContainer } from './ProjectsContainer';
+export { ExperienceContainer } from './ExperienceContainer';

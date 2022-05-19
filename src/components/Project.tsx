@@ -1,17 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
+import { ProjectContainer as Container } from '../styles';
 
 interface ContainerProps {
   inView: boolean;
 }
-
-const OuterContainer = styled.li`
-  height: 30rem;
-  margin-bottom: 5rem;
-  background: lightblue;
-  list-style: none;
-  overflow-x: hidden;
-`;
 
 const InnerContainer = styled.div<ContainerProps>`
   opacity: 0;
@@ -38,8 +31,8 @@ export default function Project() {
   }, []);
 
   return (
-    <OuterContainer ref={projectEl}>
+    <Container ref={projectEl}>
       <InnerContainer inView={inView}>Project</InnerContainer>
-    </OuterContainer>
+    </Container>
   );
 }

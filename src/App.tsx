@@ -8,6 +8,7 @@ import {
   AppContainer as Container,
   LinkButton as Button,
   LinkButtons as Buttons,
+  ProjectsContainer,
 } from './styles';
 import { ProjectType } from './types';
 
@@ -17,7 +18,7 @@ const projectsList = projects.map((project: ProjectType) => (
 
 function App() {
   const experienceRef = useRef<HTMLDivElement>(null);
-  const toolsRef = useRef<HTMLDivElement>(null);
+  const toolsRef = useRef<HTMLUListElement>(null);
   const projectsRef = useRef<HTMLUListElement>(null);
 
   const scrollToElement = (
@@ -43,7 +44,7 @@ function App() {
         </li>
       </Buttons>
       <Tools toolsRef={toolsRef} />
-      <ul ref={projectsRef}>{projectsList}</ul>
+      <ProjectsContainer ref={projectsRef}>{projectsList}</ProjectsContainer>
       <Experience experienceRef={experienceRef} />
     </Container>
   );

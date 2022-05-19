@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const LinkButtons = styled.ul`
+export const ToolsContainer = styled.ul`
   padding: 1rem;
   margin-bottom: 1rem;
-  background: #93c8ba;
+  background: #c5c9a4;
 `;
