@@ -27,7 +27,7 @@ export default function ProjectLeft({ project }: Props) {
   const [inView, setInView] = useState(false);
   const projectEl = useRef(null);
 
-  const { name, description } = project;
+  const { name, description, url } = project;
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -46,7 +46,9 @@ export default function ProjectLeft({ project }: Props) {
     <Container ref={projectEl}>
       <InnerContainer inView={inView}>
         <Title left={true} inView={inView}>
-          {name}
+          <a target="_blank" rel="noreferrer" href={url}>
+            {name}
+          </a>
         </Title>
         <Description left={true} inView={inView}>
           {description}

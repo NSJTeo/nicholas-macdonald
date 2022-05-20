@@ -3,54 +3,86 @@
     "id": 1,
     "name": "CoffeeShop",
     "url": "https://nsjteo.github.io/coffee-shop/",
-    "description": "My first project for BrainStation. Just HTML (BEM for the class names) and CSS (Sass)."
+    "description": "My first project for BrainStation. Just HTML (BEM for the class names) and CSS (Sass).",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/coffee-shop_hlmgmz.png"
+    ]
   },
   {
     "id": 2,
     "name": "TravelSite",
     "url": "https://nsjteo.github.io/travel-site/",
-    "description": "My second project for BrainStation. Same deal as my Coffee Shop website: HTML (BEM) + CSS (Sass)."
+    "description": "My second project for BrainStation. Same deal as my Coffee Shop website: HTML (BEM) + CSS (Sass).",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006920/portfolio/travel-site_ne2xsm.png",
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/travel-site-2_timcp9.png"
+    ]
   },
   {
     "id": 3,
     "name": "BandSite",
     "url": "https://nsjteo.github.io/band-site/",
-    "description": "My third BrainStation project and the first application of JavaScript in a website for me. All DOM methods - no frontend frameworks used for this."
+    "description": "My third BrainStation project and the first application of JavaScript in a website for me. All DOM methods - no frontend frameworks used for this.",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006920/portfolio/band-site_k6cnmy.png",
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/band-site-2_y3y5tm.png"
+    ]
   },
   {
     "id": 4,
     "name": "PokeMart",
     "url": "https://nsjteo.github.io/pokeMart/",
-    "description": "My first hackathon for BrainStation. The only requirement was that we use an API. This frontend application connects to the pokeAPI and uses its data to make a little poke-store."
+    "description": "My first hackathon for BrainStation. The only requirement was that we use an API. This frontend application connects to the pokeAPI and uses its data to make a little poke-store.",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006920/portfolio/pokemart_dztqtd.png"
+    ]
   },
   {
     "id": 5,
     "name": "BrainFlix",
     "url": "https://pacific-wildwood-79695.herokuapp.com/",
-    "description": "My first full stack project. React client and Express backend. Slow startup (hosted for free on Heroku)."
+    "description": "My first full stack project. React client and Express backend. Slow startup (hosted for free on Heroku).",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/brain-flix_erl5al.png"
+    ]
   },
   {
     "id": 6,
     "name": "East Vancouver Radio",
     "url": "http://sleepy-dusk-99333.herokuapp.com/",
-    "description": "My final project for BrainStation. This full stack application is hosted on Heroku for free: mind the slow startup and refresh the page if you need. This application consists of an Express server streaming music to a React client and if you also have the user/password combo you can upload or delete mp3s from the client-side. There's also a chat application handled by MongoDB and socket.io - feel free to say a \"hello\" in the chat!"
+    "description": "My final project for BrainStation. This full stack application is hosted on Heroku for free: mind the slow startup and refresh the page if you need. This application consists of an Express server streaming music to a React client and if you also have the user/password combo you can upload or delete mp3s from the client-side. There's also a chat application handled by MongoDB and socket.io - feel free to say a \"hello\" in the chat!",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/east-vancouver-radio_z2boyy.png"
+    ]
   },
   {
     "id": 7,
     "name": "InStock",
     "url": "https://damp-earth-75236.herokuapp.com/",
-    "description": "This is a full stack TypeScript project created with React, Express & Knex (connected to a MySQL database). Warning: sloooow startup."
+    "description": "This is a full stack TypeScript project created with React, Express & Knex (connected to a MySQL database). Warning: sloooow startup.",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/in-stock_es6e5v.png",
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/in-stock-2_jw2lae.png"
+    ]
   },
   {
     "id": 8,
     "name": "DevJobs",
     "url": "https://stormy-escarpment-00448.herokuapp.com/",
-    "description": "Frontend React Typescript application (using fake data). Mind the slow startup but make sure to check out the light & dark modes, as well as the responsive layout."
+    "description": "Frontend React Typescript application (using fake data). Mind the slow startup but make sure to check out the light & dark modes, as well as the responsive layout.",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/job-board_jb5h7t.png",
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/job-board-2_pzvejv.png"
+    ]
   },
   {
     "id": 9,
     "name": "Shortly",
     "url": "https://nsjteo.github.io/shorten-url-landing-page/",
-    "description": "Frontend React Typescript application connected to a URL shortening API. Made with styled-components."
+    "description": "Frontend React Typescript application connected to a URL shortening API. Made with styled-components.",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006920/portfolio/url-shorten_pvdllg.png",
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006920/portfolio/url-shorten-2_syowox.png"
+    ]
   }
 ]
