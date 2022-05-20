@@ -6,4 +6,6 @@ export { LinkButtons } from './LinkButtons';
 export { ToolsContainer } from './ToolsContainer';
 export { ProjectContainer } from './ProjectContainer';
 export { ProjectsContainer } from './ProjectsContainer';
+export { ProjectTitle } from './ProjectTitle';
+export { ProjectDescription } from './ProjectDescription';
 export { ExperienceContainer } from './ExperienceContainer';

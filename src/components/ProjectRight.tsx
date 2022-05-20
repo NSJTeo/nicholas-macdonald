@@ -1,6 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import { ProjectContainer } from '../styles';
+import {
+  ProjectContainer,
+  ProjectDescription as Description,
+  ProjectTitle as Title,
+} from '../styles';
 import { ProjectType as Project } from '../types';
 
 type Props = {
@@ -14,21 +18,25 @@ interface ContainerProps {
 const Container = styled(ProjectContainer)`
   display: flex;
   justify-content: flex-end;
-  background-color: red;
+  text-align: end;
 `;
 
 const InnerContainer = styled.div<ContainerProps>`
-  opacity: 0;
+  /* opacity: 0;
   transition: transform 1s cubic-bezier(0, 0.9, 0.27, 0.99), opacity 1.5s;
-  transform: translateX(-100%);
-  ${({ inView }) => (inView ? 'transform: translateX(0%); opacity: 1;' : '')}
+  transform: translateX(-100vw); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* ${({ inView }) =>
+    inView ? 'transform: translateX(0vw); opacity: 1;' : ''} */
 `;
 
 export default function ProjectRight({ project }: Props) {
   const [inView, setInView] = useState(false);
   const projectEl = useRef(null);
 
-  const { name, url } = project;
+  const { name, description } = project;
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -46,8 +54,12 @@ export default function ProjectRight({ project }: Props) {
   return (
     <Container ref={projectEl}>
       <InnerContainer inView={inView}>
-        <h3>{name}</h3>
-        <p>{url}</p>
+        <Title left={false} inView={inView}>
+          {name}
+        </Title>
+        <Description left={false} inView={inView}>
+          {description}
+        </Description>
       </InnerContainer>
     </Container>
   );
