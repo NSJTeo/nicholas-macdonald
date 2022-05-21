@@ -6,6 +6,7 @@ type ProjectDescriptionProps = {
 };
 
 export const ProjectDescription = styled.p<ProjectDescriptionProps>`
+  margin-bottom: 1rem;
   width: 50%;
   opacity: 0;
   transition: transform 1.5s cubic-bezier(0, 0.9, 0.27, 0.99), opacity 2s;

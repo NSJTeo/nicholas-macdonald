@@ -8,4 +8,8 @@ export { ProjectContainer } from './ProjectContainer';
 export { ProjectsContainer } from './ProjectsContainer';
 export { ProjectTitle } from './ProjectTitle';
 export { ProjectDescription } from './ProjectDescription';
+export { ProjectImage } from './ProjectImage';
+export { ProjectImages } from './ProjectImages';
 export { ExperienceContainer } from './ExperienceContainer';
+export { ProjectImageLink } from './ProjectImageLink';
+export { ProjectImageContainer } from './ProjectImageContainer';

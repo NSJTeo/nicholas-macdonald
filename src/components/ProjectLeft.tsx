@@ -4,6 +4,10 @@ import {
   ProjectContainer as Container,
   ProjectDescription as Description,
   ProjectTitle as Title,
+  ProjectImage as Image,
+  ProjectImages as Images,
+  ProjectImageLink as ImageLink,
+  ProjectImageContainer as ImageContainer,
 } from '../styles';
 import { ProjectType as Project } from '../types';
 
@@ -27,7 +31,7 @@ export default function ProjectLeft({ project }: Props) {
   const [inView, setInView] = useState(false);
   const projectEl = useRef(null);
 
-  const { name, description, url } = project;
+  const { name, description, url, images } = project;
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -42,6 +46,16 @@ export default function ProjectLeft({ project }: Props) {
     }
   }, []);
 
+  const imagesList = images.map((image, index) => {
+    return (
+      <ImageContainer index={index} left={true} inView={inView}>
+        <ImageLink target="_blank" rel="noreferrer" href={url}>
+          <Image key={index} src={image} />
+        </ImageLink>
+      </ImageContainer>
+    );
+  });
+
   return (
     <Container ref={projectEl}>
       <InnerContainer inView={inView}>
@@ -53,6 +67,7 @@ export default function ProjectLeft({ project }: Props) {
         <Description left={true} inView={inView}>
           {description}
         </Description>
+        <Images left={true}>{imagesList}</Images>
       </InnerContainer>
     </Container>
   );
