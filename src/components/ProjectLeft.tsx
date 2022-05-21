@@ -28,12 +28,19 @@ const InnerContainer = styled.div<ContainerProps>`
 `;
 
 export default function ProjectLeft({ project }: Props) {
-  const [inView, setInView] = useState(false);
+  const [inView, setInView] = useState<boolean>(false);
+  const [loaded, setLoaded] = useState<boolean>(false);
   const projectEl = useRef(null);
 
   const { name, description, url, images } = project;
 
   useEffect(() => {
+    if (!loaded) {
+      setTimeout(() => {
+        setLoaded(true);
+      }, 1000);
+      return;
+    }
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
       if (entry.isIntersecting) {
@@ -44,7 +51,7 @@ export default function ProjectLeft({ project }: Props) {
     if (projectEl?.current) {
       observer.observe(projectEl.current);
     }
-  }, []);
+  }, [loaded]);
 
   const imagesList = images.map((image, index) => {
     return (

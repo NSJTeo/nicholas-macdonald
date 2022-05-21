@@ -8,15 +8,22 @@ const titleText = 'Nicholas MacDonald - Full Stack Developer';
 
 export default function AboutMe() {
   const [title, setTitle] = useState<string>('');
+  const [loaded, setLoaded] = useState<boolean>(false);
 
   useEffect(() => {
+    if (!loaded) {
+      setTimeout(() => {
+        setLoaded(true);
+      }, 1000);
+      return;
+    }
     if (titleText === title) return;
     const timeout = setTimeout(() => {
       setTitle(titleText.slice(0, title.length + 1));
     }, 50);
 
     return () => clearTimeout(timeout);
-  }, [title]);
+  }, [title, loaded]);
 
   return (
     <Container>
