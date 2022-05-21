@@ -1,6 +1,7 @@
 export { AppContainer } from './AppContainer';
 export { GlobalStyles } from './GlobalStyles';
 export { AboutMeContainer } from './AboutMeContainer';
+export { AboutMeTitle } from './AboutMeTitle';
 export { LinkButton } from './LinkButton';
 export { LinkButtons } from './LinkButtons';
 export { ToolsContainer } from './ToolsContainer';

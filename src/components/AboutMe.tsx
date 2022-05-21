@@ -1,9 +1,28 @@
-import { AboutMeContainer as Container } from '../styles';
+import { useState, useEffect } from 'react';
+import {
+  AboutMeContainer as Container,
+  AboutMeTitle as Title,
+} from '../styles';
+
+const titleText = 'Nicholas MacDonald - Full Stack Developer';
 
 export default function AboutMe() {
+  const [title, setTitle] = useState<string>('');
+
+  useEffect(() => {
+    if (titleText === title) return;
+    const timeout = setTimeout(() => {
+      setTitle(titleText.slice(0, title.length + 1));
+    }, 50);
+
+    return () => clearTimeout(timeout);
+  }, [title]);
+
   return (
     <Container>
-      <h1>Nicholas MacDonald - Full Stack Developer</h1>
+      <h1>
+        <Title>{title}</Title>
+      </h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra
         mauris tortor, et facilisis nulla tempus nec. Duis quis dolor finibus,

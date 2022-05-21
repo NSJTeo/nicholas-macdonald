@@ -9,7 +9,7 @@ type ProjectImageProps = {
 export const ProjectImageContainer = styled.li<ProjectImageProps>`
   padding: 0.5rem;
   margin-bottom: 1rem;
-  background-color: #dcdcdc;
+  background-color: white;
   width: fit-content;
   display: block;
   border: 1px solid black;
