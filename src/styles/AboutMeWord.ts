@@ -8,11 +8,7 @@ interface AboutMeWordProps {
 export const AboutMeWord = styled.span<AboutMeWordProps>`
   opacity: 0;
   position: relative;
-  top: -10rem;
   transition: top 1s;
-  ${({ index }) =>
-    `transition: top 300ms ${
-      index * 50
-    }ms cubic-bezier(.17,.67,.46,.74), opacity 1s ${index * 50}ms;`}
-  ${({ loaded }) => (loaded ? 'top: 0rem; opacity: 1;' : '')}
+  ${({ index }) => `transition: opacity 1s ${index * 75}ms;`}
+  ${({ loaded }) => (loaded ? 'opacity: 1;' : '')}
 `;
