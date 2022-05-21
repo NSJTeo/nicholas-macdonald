@@ -3,6 +3,7 @@ export { AppContainer } from './AppContainer';
 export { AppMask } from './AppMask';
 export { AboutMeContainer } from './AboutMeContainer';
 export { AboutMeTitle } from './AboutMeTitle';
+export { AboutMeWord } from './AboutMeWord';
 export { LinkButton } from './LinkButton';
 export { LinkButtons } from './LinkButtons';
 export { ToolsContainer } from './ToolsContainer';

@@ -9,7 +9,7 @@ const blink = keyframes`
 
 export const AboutMeTitle = styled.h1`
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   &::after {
     content: '|';
     animation: ${blink} 1s step-start infinite;
