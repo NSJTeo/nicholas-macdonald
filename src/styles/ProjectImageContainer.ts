@@ -13,6 +13,7 @@ export const ProjectImageContainer = styled.li<ProjectImageProps>`
   width: fit-content;
   display: block;
   border: 1px solid black;
+  box-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
   border-radius: 5px;
   ${({ left }) => (left ? 'margin-right: 1rem;' : 'margin-left: 1rem;')}
   opacity: 0;
