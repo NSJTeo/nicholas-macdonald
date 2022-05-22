@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-export const ProjectContainer = styled.li`
-  overflow-x: hidden;
+export const ProjectsTitle = styled.h2`
   margin-bottom: 1rem;
 `;

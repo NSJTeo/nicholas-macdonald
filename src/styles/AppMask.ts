@@ -5,9 +5,9 @@ interface AppMaskProps {
 }
 
 export const AppMask = styled.div<AppMaskProps>`
-  border-right: 2rem solid black;
   position: absolute;
-  height: 500vh;
+  top: 0;
+  bottom: 0;
   width: 100%;
   background: white;
   z-index: 3;

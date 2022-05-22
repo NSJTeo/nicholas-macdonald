@@ -9,11 +9,11 @@ type ProjectImageProps = {
 export const ProjectImageContainer = styled.li<ProjectImageProps>`
   padding: 0.5rem;
   margin-bottom: 1rem;
-  background-color: white;
+  background-color: black;
   width: fit-content;
   display: block;
-  border: 1px solid black;
-  box-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
+  border: 1px solid white;
+  box-shadow: 3px 3px 5px rgb(255 255 255 / 40%);
   border-radius: 5px;
   ${({ left }) => (left ? 'margin-right: 1rem;' : 'margin-left: 1rem;')}
   opacity: 0;

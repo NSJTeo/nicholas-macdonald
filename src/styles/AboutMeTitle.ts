@@ -8,7 +8,6 @@ const blink = keyframes`
 `;
 
 export const AboutMeTitle = styled.h1`
-  color: white;
   margin-bottom: 1rem;
   &::after {
     content: '|';

@@ -7,5 +7,10 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  html {
+    background: black;
   }
 `;

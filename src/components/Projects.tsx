@@ -1,13 +1,9 @@
-import React from 'react';
 import projects from '../assets/projects.json';
 import { ProjectsContainer } from '../styles/ProjectsContainer';
 import { ProjectType as Project } from '../types';
+import { ProjectsTitle as Title } from '../styles/ProjectsTitle';
 import ProjectLeft from './ProjectLeft';
 import ProjectRight from './ProjectRight';
-
-type Props = {
-  projectsRef: React.RefObject<HTMLUListElement>;
-};
 
 const projectsList = () => {
   let left = true;
@@ -21,8 +17,11 @@ const projectsList = () => {
   });
 };
 
-export default function Projects({ projectsRef }: Props) {
+export default function Projects() {
   return (
-    <ProjectsContainer ref={projectsRef}>{projectsList()}</ProjectsContainer>
+    <>
+      <Title>Projects</Title>
+      <ProjectsContainer>{projectsList()}</ProjectsContainer>
+    </>
   );
 }
