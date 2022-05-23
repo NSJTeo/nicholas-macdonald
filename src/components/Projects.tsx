@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import projects from '../assets/projects.json';
 import { ProjectsContainer } from '../styles/ProjectsContainer';
 import { ProjectType as Project } from '../types';
@@ -18,9 +19,20 @@ const projectsList = () => {
 };
 
 export default function Projects() {
+  const [loaded, setLoaded] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!loaded) {
+      setTimeout(() => {
+        setLoaded(true);
+      }, 750);
+      return;
+    }
+  }, [loaded]);
+
   return (
     <>
-      <Title>Projects</Title>
+      <Title loaded={loaded}>Projects</Title>
       <ProjectsContainer>{projectsList()}</ProjectsContainer>
     </>
   );

@@ -12,8 +12,8 @@ export const ProjectImageContainer = styled.li<ProjectImageProps>`
   background-color: black;
   width: fit-content;
   display: block;
-  border: 1px solid white;
-  box-shadow: 3px 3px 5px rgb(255 255 255 / 40%);
+  border: 2px solid white;
+  box-shadow: 3px 3px 5px rgb(255 255 255 / 60%);
   border-radius: 5px;
   ${({ left }) => (left ? 'margin-right: 1rem;' : 'margin-left: 1rem;')}
   opacity: 0;

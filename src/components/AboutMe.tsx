@@ -3,6 +3,7 @@ import {
   AboutMeContainer as Container,
   AboutMeTitle as Title,
   AboutMeWord as Word,
+  AboutMeWords as Words,
 } from '../styles';
 
 const titleText = 'Nicholas MacDonald - Full Stack Developer';
@@ -41,7 +42,7 @@ export default function AboutMe() {
       <h1>
         <Title>{title}</Title>
       </h1>
-      <p>{aboutMeTextSpans}</p>
+      <Words>{aboutMeTextSpans}</Words>
     </Container>
   );
 }

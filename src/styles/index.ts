@@ -4,6 +4,7 @@ export { AppMask } from './AppMask';
 export { AboutMeContainer } from './AboutMeContainer';
 export { AboutMeTitle } from './AboutMeTitle';
 export { AboutMeWord } from './AboutMeWord';
+export { AboutMeWords } from './AboutMeWords';
 export { ProjectContainer } from './ProjectContainer';
 export { ProjectsContainer } from './ProjectsContainer';
 export { ProjectsTitle } from './ProjectsTitle';
