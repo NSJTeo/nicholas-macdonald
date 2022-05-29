@@ -42,7 +42,7 @@ export default function ProjectLeft({ project }: Props) {
 
   const imagesList = images.map((image, index) => {
     return (
-      <ImageContainer index={index} left={true} inView={inView}>
+      <ImageContainer key={index} index={index} left={true} inView={inView}>
         <ImageLink target="_blank" rel="noreferrer" href={url}>
           <Image key={index} src={image} />
         </ImageLink>

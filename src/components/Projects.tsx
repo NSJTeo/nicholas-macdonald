@@ -5,10 +5,12 @@ import { ProjectType as Project } from '../types';
 import { ProjectsTitle as Title } from '../styles/ProjectsTitle';
 import ProjectLeft from './ProjectLeft';
 import ProjectRight from './ProjectRight';
+import ignoreList from '../assets/ignore.json';
 
 const projectsList = () => {
   let left = true;
   return projects.map((project: Project) => {
+    if (ignoreList.includes(project.id)) return null;
     if (left) {
       left = false;
       return <ProjectLeft key={project.id} project={project} />;

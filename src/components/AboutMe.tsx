@@ -6,9 +6,8 @@ import {
   AboutMeWords as Words,
 } from '../styles';
 
-const titleText = 'Nicholas MacDonald - Full Stack Developer';
-const aboutMeText =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris tortor, et facilisis nulla tempus nec. Duis quis dolor finibus, vehicula ipsum quis, porttitor ligula. Etiam tempor non elit interdum mollis. Ut vitae auctor arcu. Nullam dictum egestas risus vitae tempus. Aliquam justo elit, condimentum nec eros vitae, porta ultricies ex.';
+const titleText = 'Nicholas MacDonald';
+const aboutMeText = `I'm a full stack developer living in Vancouver, B.C. Looking for freelance work! Comfortable with JavaScript, TypeScript, React, Node, Express and much more. You can reach me at n.teomacdonald@gmail.com.`;
 
 export default function AboutMe() {
   const [title, setTitle] = useState<string>('');
@@ -16,7 +15,7 @@ export default function AboutMe() {
 
   const aboutMeTextSpans = aboutMeText.split(' ').map((word, index) => {
     return (
-      <Word index={index} loaded={loaded}>
+      <Word key={index} index={index} loaded={loaded}>
         {word}{' '}
       </Word>
     );
@@ -39,9 +38,7 @@ export default function AboutMe() {
 
   return (
     <Container>
-      <h1>
-        <Title>{title}</Title>
-      </h1>
+      <Title>{title}</Title>
       <Words>{aboutMeTextSpans}</Words>
     </Container>
   );
