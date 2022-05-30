@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import projects from '../../assets/projects.json';
-import { ProjectsContainer } from '../../styles/ProjectsContainer';
 import { ProjectType as Project } from '../../types';
-import { ProjectsTitle as Title } from '../../styles/ProjectsTitle';
 import { ProjectLeft } from '../ProjectLeft';
 import { ProjectRight } from '../ProjectRight';
 import ignoreList from '../../assets/ignore.json';
+import './ProjectsList.scss';
 
 const projectsList = () => {
   let left = true;
@@ -34,8 +33,8 @@ export function ProjectsList() {
 
   return (
     <>
-      <Title loaded={loaded}>Projects</Title>
-      <ProjectsContainer>{projectsList()}</ProjectsContainer>
+      <h2 className="projects-list__title">Projects</h2>
+      <ul className="projects-list__projects">{projectsList()}</ul>
     </>
   );
 }

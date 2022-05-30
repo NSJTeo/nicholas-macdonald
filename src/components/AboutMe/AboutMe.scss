@@ -1,0 +1,22 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.about-me {
+  &__container {
+    margin: 1rem 0;
+  }
+  &__title {
+    margin-bottom: 1rem;
+    &::after {
+      content: '|';
+      animation: blink 1s step-start infinite;
+    }
+  }
+  &__words {
+    padding-left: 2rem;
+    line-height: 1.5rem;
+  }
+}

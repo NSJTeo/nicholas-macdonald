@@ -1,0 +1,24 @@
+@keyframes slide-in {
+  to {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+.projects-list {
+  &__title {
+    margin-bottom: 1rem;
+    transform: translateX(100vw);
+    opacity: 0;
+    animation: slide-in 1s cubic-bezier(0, 0.9, 0.27, 0.99) 1s forwards,
+      appear 1.5s 1s forwards;
+  }
+  &__projects {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react';
-import {
-  AboutMeContainer as Container,
-  AboutMeTitle as Title,
-  AboutMeWord as Word,
-  AboutMeWords as Words,
-} from '../../styles';
+import { AboutMeWord as Word } from '../../styles';
+import './AboutMe.scss';
 
 const titleText = 'Nicholas MacDonald';
 const aboutMeText = `I'm a full stack developer living in Vancouver, B.C. Looking for freelance work! Comfortable with JavaScript, TypeScript, React, Node, Express and much more. You can reach me at n.teomacdonald@gmail.com.`;
@@ -37,9 +33,9 @@ export function AboutMe() {
   }, [title, loaded]);
 
   return (
-    <Container>
-      <Title>{title}</Title>
-      <Words>{aboutMeTextSpans}</Words>
-    </Container>
+    <section className="about-me__container">
+      <h1 className="about-me__title">{title}</h1>
+      <p className="about-me__words">{aboutMeTextSpans}</p>
+    </section>
   );
 }

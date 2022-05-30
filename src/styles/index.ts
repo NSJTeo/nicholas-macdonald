@@ -1,12 +1,7 @@
 export { GlobalStyles } from './GlobalStyles';
 export { AppContainer } from './AppContainer';
-export { AboutMeContainer } from './AboutMeContainer';
-export { AboutMeTitle } from './AboutMeTitle';
 export { AboutMeWord } from './AboutMeWord';
-export { AboutMeWords } from './AboutMeWords';
 export { ProjectContainer } from './ProjectContainer';
-export { ProjectsContainer } from './ProjectsContainer';
-export { ProjectsTitle } from './ProjectsTitle';
 export { ProjectTitle } from './ProjectTitle';
 export { ProjectDescription } from './ProjectDescription';
 export { ProjectImage } from './ProjectImage';
