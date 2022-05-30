@@ -8,8 +8,8 @@ import {
   ProjectImages as Images,
   ProjectImageLink as ImageLink,
   ProjectImageContainer as ImageContainer,
-} from '../styles';
-import { ProjectType as Project } from '../types';
+} from '../../styles';
+import { ProjectType as Project } from '../../types';
 
 type Props = {
   project: Project;
@@ -36,7 +36,7 @@ const InnerContainer = styled.div<ContainerProps>`
     inView ? 'transform: translateX(0vw); opacity: 1;' : ''} */
 `;
 
-export default function ProjectRight({ project }: Props) {
+export function ProjectRight({ project }: Props) {
   const [inView, setInView] = useState<boolean>(false);
   const [loaded, setLoaded] = useState<boolean>(false);
   const projectEl = useRef(null);

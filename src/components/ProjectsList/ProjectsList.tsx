@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import projects from '../assets/projects.json';
-import { ProjectsContainer } from '../styles/ProjectsContainer';
-import { ProjectType as Project } from '../types';
-import { ProjectsTitle as Title } from '../styles/ProjectsTitle';
-import ProjectLeft from './ProjectLeft';
-import ProjectRight from './ProjectRight';
-import ignoreList from '../assets/ignore.json';
+import projects from '../../assets/projects.json';
+import { ProjectsContainer } from '../../styles/ProjectsContainer';
+import { ProjectType as Project } from '../../types';
+import { ProjectsTitle as Title } from '../../styles/ProjectsTitle';
+import { ProjectLeft } from '../ProjectLeft';
+import { ProjectRight } from '../ProjectRight';
+import ignoreList from '../../assets/ignore.json';
 
 const projectsList = () => {
   let left = true;
@@ -20,7 +20,7 @@ const projectsList = () => {
   });
 };
 
-export default function Projects() {
+export function ProjectsList() {
   const [loaded, setLoaded] = useState<boolean>(false);
 
   useEffect(() => {

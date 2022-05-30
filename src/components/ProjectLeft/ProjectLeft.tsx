@@ -7,14 +7,14 @@ import {
   ProjectImages as Images,
   ProjectImageLink as ImageLink,
   ProjectImageContainer as ImageContainer,
-} from '../styles';
-import { ProjectType as Project } from '../types';
+} from '../../styles';
+import { ProjectType as Project } from '../../types';
 
 type Props = {
   project: Project;
 };
 
-export default function ProjectLeft({ project }: Props) {
+export function ProjectLeft({ project }: Props) {
   const [inView, setInView] = useState<boolean>(false);
   const [loaded, setLoaded] = useState<boolean>(false);
   const projectEl = useRef(null);

@@ -1,5 +1,4 @@
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
+import { AboutMe, ProjectsList } from './components';
 import { AppContainer as Container } from './styles';
 
 function App() {
@@ -7,7 +6,7 @@ function App() {
     <div>
       <Container>
         <AboutMe />
-        <Projects />
+        <ProjectsList />
       </Container>
     </div>
   );

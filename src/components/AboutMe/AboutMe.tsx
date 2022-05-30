@@ -4,12 +4,12 @@ import {
   AboutMeTitle as Title,
   AboutMeWord as Word,
   AboutMeWords as Words,
-} from '../styles';
+} from '../../styles';
 
 const titleText = 'Nicholas MacDonald';
 const aboutMeText = `I'm a full stack developer living in Vancouver, B.C. Looking for freelance work! Comfortable with JavaScript, TypeScript, React, Node, Express and much more. You can reach me at n.teomacdonald@gmail.com.`;
 
-export default function AboutMe() {
+export function AboutMe() {
   const [title, setTitle] = useState<string>('');
   const [loaded, setLoaded] = useState<boolean>(false);
 
