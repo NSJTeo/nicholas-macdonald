@@ -1,6 +1,5 @@
 export { GlobalStyles } from './GlobalStyles';
 export { AppContainer } from './AppContainer';
-export { AppMask } from './AppMask';
 export { AboutMeContainer } from './AboutMeContainer';
 export { AboutMeTitle } from './AboutMeTitle';
 export { AboutMeWord } from './AboutMeWord';
