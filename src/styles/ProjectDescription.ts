@@ -7,8 +7,10 @@ type ProjectDescriptionProps = {
 
 export const ProjectDescription = styled.p<ProjectDescriptionProps>`
   margin-bottom: 1rem;
+  min-width: 20rem;
   width: 50%;
   opacity: 0;
+  line-height: 1.25rem;
   transition: transform 1.5s cubic-bezier(0, 0.9, 0.27, 0.99), opacity 2s;
   ${({ left, inView }) => {
     if (left) {

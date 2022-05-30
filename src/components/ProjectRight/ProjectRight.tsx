@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import {
-  ProjectContainer,
   ProjectDescription as Description,
   ProjectTitle as Title,
   ProjectImage as Image,
@@ -10,6 +9,7 @@ import {
   ProjectImageContainer as ImageContainer,
 } from '../../styles';
 import { ProjectType as Project } from '../../types';
+import './ProjectRight.scss';
 
 type Props = {
   project: Project;
@@ -18,12 +18,6 @@ type Props = {
 interface ContainerProps {
   inView: boolean;
 }
-
-const Container = styled(ProjectContainer)`
-  display: flex;
-  justify-content: flex-end;
-  text-align: end;
-`;
 
 const InnerContainer = styled.div<ContainerProps>`
   /* opacity: 0;
@@ -73,7 +67,7 @@ export function ProjectRight({ project }: Props) {
   });
 
   return (
-    <Container ref={projectEl}>
+    <li className="project__container--right" ref={projectEl}>
       <InnerContainer inView={inView}>
         <Title left={false} inView={inView}>
           <a target="_blank" rel="noreferrer" href={url}>
@@ -85,6 +79,6 @@ export function ProjectRight({ project }: Props) {
         </Description>
         <Images left={false}>{imagesList}</Images>
       </InnerContainer>
-    </Container>
+    </li>
   );
 }

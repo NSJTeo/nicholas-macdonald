@@ -1,0 +1,12 @@
+@use '../ProjectLeft/ProjectLeft.scss';
+
+.project {
+  &__container {
+    &--right {
+      @extend .project__container;
+      display: flex;
+      justify-content: flex-end;
+      text-align: end;
+    }
+  }
+}

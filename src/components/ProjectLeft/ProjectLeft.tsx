@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import {
-  ProjectContainer as Container,
   ProjectDescription as Description,
   ProjectTitle as Title,
   ProjectImage as Image,
@@ -9,6 +8,7 @@ import {
   ProjectImageContainer as ImageContainer,
 } from '../../styles';
 import { ProjectType as Project } from '../../types';
+import './ProjectLeft.scss';
 
 type Props = {
   project: Project;
@@ -51,18 +51,16 @@ export function ProjectLeft({ project }: Props) {
   });
 
   return (
-    <Container ref={projectEl}>
-      <div>
-        <Title left={true} inView={inView}>
-          <a target="_blank" rel="noreferrer" href={url}>
-            {name}
-          </a>
-        </Title>
-        <Description left={true} inView={inView}>
-          {description}
-        </Description>
-        <Images left={true}>{imagesList}</Images>
-      </div>
-    </Container>
+    <li className="project__container" ref={projectEl}>
+      <Title left={true} inView={inView}>
+        <a target="_blank" rel="noreferrer" href={url}>
+          {name}
+        </a>
+      </Title>
+      <Description left={true} inView={inView}>
+        {description}
+      </Description>
+      <Images left={true}>{imagesList}</Images>
+    </li>
   );
 }
