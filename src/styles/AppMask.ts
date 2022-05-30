@@ -9,6 +9,7 @@ export const AppMask = styled.div<AppMaskProps>`
   top: 0;
   bottom: 0;
   width: 100%;
+  height: 200vh;
   background: white;
   z-index: 3;
   transition: 1s;

@@ -6,5 +6,6 @@ interface ProjectImagesProps {
 
 export const ProjectImages = styled.ul<ProjectImagesProps>`
   display: flex;
+  flex-wrap: wrap;
   ${({ left }) => (left ? '' : 'flex-direction: row-reverse')}
 `;

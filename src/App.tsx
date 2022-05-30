@@ -5,14 +5,18 @@ import { AppContainer as Container, AppMask as Mask } from './styles';
 
 function App() {
   const [loaded, setLoaded] = useState<boolean>(false);
+  const [maskOn, setMaskOn] = useState<boolean>(true);
 
   useEffect(() => {
     setLoaded(true);
+    setTimeout(() => {
+      setMaskOn(false);
+    }, 2000);
   }, []);
 
   return (
     <div>
-      <Mask loaded={loaded} />
+      {maskOn && <Mask loaded={loaded} />}
       <Container>
         <AboutMe />
         <Projects />
