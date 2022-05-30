@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/nicholas-macdonald/static/js/main.53c8e97b.js",
+    "main.css": "/nicholas-macdonald/static/css/main.7f9028bd.css",
+    "main.js": "/nicholas-macdonald/static/js/main.f0a43ef1.js",
     "index.html": "/nicholas-macdonald/index.html",
-    "main.53c8e97b.js.map": "/nicholas-macdonald/static/js/main.53c8e97b.js.map"
+    "main.7f9028bd.css.map": "/nicholas-macdonald/static/css/main.7f9028bd.css.map",
+    "main.f0a43ef1.js.map": "/nicholas-macdonald/static/js/main.f0a43ef1.js.map"
   },
   "entrypoints": [
-    "static/js/main.53c8e97b.js"
+    "static/css/main.7f9028bd.css",
+    "static/js/main.f0a43ef1.js"
   ]
 }
