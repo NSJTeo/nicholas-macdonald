@@ -3,7 +3,7 @@ import { AboutMeWord as Word } from '../../styles';
 import './AboutMe.scss';
 
 const titleText = 'Nicholas MacDonald';
-const aboutMeText = `I'm a full stack developer living in Vancouver, B.C. Looking for freelance work! Comfortable with JavaScript, TypeScript, React, Node, Express and much more. You can reach me at n.teomacdonald@gmail.com.`;
+const aboutMeText = `I'm a full stack developer living in Vancouver, B.C. Looking for freelance work! Comfortable with JavaScript, TypeScript, React, Node, Express, MongoDB, SQL and much more. You can reach me at n.teomacdonald@gmail.com.`;
 
 export function AboutMe() {
   const [title, setTitle] = useState<string>('');

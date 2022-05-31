@@ -50,7 +50,7 @@
     "id": 6,
     "name": "East Vancouver Radio",
     "url": "http://sleepy-dusk-99333.herokuapp.com/",
-    "description": "This is an internet radio app that I made for fun: it consists of an Express server streaming music to a React client and if you also have the user/password combo you can upload or delete mp3s from the client-side. There's also a chat application handled by MongoDB and socket.io - feel free to say a \"hello\" in the chat.",
+    "description": "This is an internet radio app: it consists of an Express server streaming music to a React client and if you also have the user/password combo you can upload or delete mp3s from the client-side. My friends made some mixes that I keep hosted on there. There's also a chat application handled by MongoDB and socket.io - feel free to say \"hello\"!",
     "images": [
       "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006919/portfolio/east-vancouver-radio_z2boyy.png"
     ]
