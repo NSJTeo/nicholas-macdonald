@@ -77,12 +77,21 @@
   },
   {
     "id": 9,
-    "name": "Shortly",
+    "name": "Shortly Landing Page",
     "url": "https://nsjteo.github.io/shorten-url-landing-page/",
     "description": "Landing page connected to an API where users can generate shorter URLs to share. Built in React and styled with styled-components. Fully responsive: it includes mobile, tablet & desktop views.",
     "images": [
       "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006920/portfolio/url-shorten_pvdllg.png",
       "https://res.cloudinary.com/duuvpggwv/image/upload/v1653006920/portfolio/url-shorten-2_syowox.png"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Huddle Landing Page",
+    "url": "https://nsjteo.github.io/huddle-landing-page",
+    "description": "Pretty ordinary landing page. Styled with Sass & styled-components. Desktop, mobile & tablet views.",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1654063055/portfolio/huddle-desktop_uvierf.png"
     ]
   }
 ]
