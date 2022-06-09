@@ -89,9 +89,19 @@
     "id": 10,
     "name": "Huddle Landing Page",
     "url": "https://nsjteo.github.io/huddle-landing-page",
-    "description": "Pretty ordinary landing page. Styled with Sass & styled-components. Desktop, mobile & tablet views.",
+    "description": "Pretty ordinary landing page. Built in React and styled with Sass & styled-components. Desktop, mobile & tablet views.",
     "images": [
       "https://res.cloudinary.com/duuvpggwv/image/upload/v1654063055/portfolio/huddle-desktop_uvierf.png"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Fylo Landing Page",
+    "url": "https://nsjteo.github.io/fylo-landing-page",
+    "description": "My first Vue project. Safe to say it won't be my last - I'm a fan! Next I'll be learning Vuex & Vue Router as well as Vue TypeScript practices. This landing page was styled with Sass and has both a desktop and mobile view.",
+    "images": [
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1654738128/portfolio/fylo-mobile_sltutn.png",
+      "https://res.cloudinary.com/duuvpggwv/image/upload/v1654738128/portfolio/fylo-desktop_p6uq4s.png"
     ]
   }
 ]
