@@ -7,8 +7,7 @@ type ProjectDescriptionProps = {
 
 export const ProjectDescription = styled.p<ProjectDescriptionProps>`
   margin-bottom: 1rem;
-  min-width: 20rem;
-  width: 50%;
+  max-width: 100%;
   opacity: 0;
   line-height: 1.25rem;
   transition: transform 1.5s cubic-bezier(0, 0.9, 0.27, 0.99), opacity 2s;
@@ -24,4 +23,7 @@ export const ProjectDescription = styled.p<ProjectDescriptionProps>`
       ${inView ? 'transform: translateX(0vw); opacity: 1;' : ''}
     `;
   }}
+  @media (min-width: 768px) {
+    max-width: 640px;
+  }
 `;

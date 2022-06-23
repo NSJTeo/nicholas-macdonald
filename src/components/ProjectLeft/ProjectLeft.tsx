@@ -57,7 +57,7 @@ export function ProjectLeft({ project }: Props) {
           {name}
         </a>
       </Title>
-      <Description left={true} inView={inView}>
+      <Description left={true} inView={inView} className="project__description">
         {description}
       </Description>
       <Images left={true}>{imagesList}</Images>
